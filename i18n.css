@@ -1,0 +1,125 @@
+:root, 
+:root:lang(en) {
+--theorem: "theorem"; --theorems: var(--theorem) "s";
+--lemma: "lemma"; --lemmas: var(--lemma) "s";
+--definition: "definition"; --definitions: var(--definition) "s";
+--proof: "proof"; --proofs: var(--proof) "s";
+--abstract: "abstract"; --abstracts: var(--abstract) "s";
+--page: "page"; --pages: var(--page) "s";
+--book: "book"; --books: var(--book) "s";
+--article: "article"; --articles: var(--article) "s"; /* docuemnt type, not word category */
+--letter: "letter"; --letters: var(--letter) "s"; /* postal document, not unit of writing */
+--document: "document"; --documents: var(--document) "s";
+--part: "part"; --parts: var(--part) "s";
+--chapter: "chapter"; --chapters: var(--chapter) "s";
+--section: "section"; --sections: var(--section) "s";
+--subsection: "subsection"; --subsections: var(--subsection) "s";
+--subsubsection: "subsubsection"; --subsubsections: var(--subsubsection) "s";
+--paragraph: "paragraph"; --paragraphs: var(--paragraph) "s";
+--table: "table"; --tables: var(--table) "s";
+--figure: "figure"; --figures: var(--figure) "s";
+--formula: "formula"; --formulas: var(--formula) "s";
+--equation: "equation"; --equations: var(--equation) "s";
+--listing: "listing"; --listings: var(--listing) "s";
+--index: "index"; --indexes: var(--index) "es";
+--glossary: "glossary"; --glossaries: "glossaries";
+--annex: "annex"; --annexes: var(--annex) "es";
+--bibliography: "bibliography"; --bibliographies: "bibliographies";
+--source: "source"; --sources: var(--source) "s";
+--subject: "subject"; --subjects: var(--subject) "s"; /* of a letter */
+--title: "title"; --titles: var(--title) "s";
+--subtitle: "subtitle"; --subtitles: var(--subtitle) "s";
+--author: "author"; --authors: var(--author) "s";
+--editor: "editor"; --editors: var(--editor) "s";
+--table-of: "table of ";
+--list-of: "list of ";
+--toc: --var(table-of) "contents";
+--in: "in"; /* location, inside */
+--at: "at"; /* location */
+--of: "of"; /* partial */
+--and: "and";
+--or: "or";
+--et-al: "et al.";
+--ibid: "ibid.";
+--f: "f."; --ff: "ff."; /* and the following */
+--to-symbol: "–";
+--of-symbol: "/";
+--qed: "\25FB";
+--ps: "PS";
+--cc: "CC";
+--bcc: "BCC";
+--enclosure: "enclosure"; --enclosures: var(--enclosure) "s";
+--attachment: "attachment"; --attachments: var(--attachment) "s";
+--date-separator: "-"; /* "/" */
+--time-separator: ":";
+--example: "example"; --examples: var(--example) "s";
+--quotation: "quotation"; --quotations: var(--quotation) "s";
+--corollary: "corollary"; --corollaries: "corollaries";
+--hypothesis: "hypothesis"; --hypothesis: var(--hypothesis) "es";
+--thesis: "thesis"; --thesises: var(--thesis) "es";
+--dissertation: "dissertation"; --dissertations: var(--dissertation) "s";
+}
+/**
+ * German translations and localization
+ */
+:root:lang(de) {
+--theorem: "Satz"; --theorems: "Sätze"; /* Theorem, These, Hypothese, Korollar */
+--lemma: "Lemma"; --lemmas: var(--lemma) "ta";
+--definition: "Definition"; --definitions: var(--definition) "en";
+--proof: "Beweis"; --proofs: var(--proof) "e";
+/*--abstract: "Zusammenfassung"; --abstracts: var(--abstract) "s";*/
+--page: "Seite"; --pages: var(--page) "n"; --of-pages: var(--pages);
+--book: "Buch"; --books: "Bücher"; --of-books: var(--books) "n";
+--article: "Artikel"; --articles: var(--article); --of-articles: var(--articles) "n"; /* document type, not word category */
+--letter: "Brief"; --letters: var(--letter) "e"; --of-letters: var(--letters) "n"; /* postal document, not unit of writing */
+--document: "Dokument"; --documents: var(--document) "e"; --of-documents: var(--documents) "n";
+--part: "Teil"; --parts: var(--part) "e"; --of-parts: var(--parts) "n";
+--chapter: "Kapitel"; --chapters: var(--chapter); --of-chapters: var(--chapters) "n";
+--section: "Abschnitt"; --sections: var(--section) "e"; --of-sections: var(--sections) "n";
+--subsection: "Unterabschnitt"; --subsections: var(--subsection) "e"; --of-subsections: var(--subsections) "n";
+--subsubsection: "subsubsection"; --subsubsections: var(--subsubsection) "s";
+--paragraph: "Absatz"; --paragraphs: "Absätze"; --of-paragraphs: var(--paragraphs) "n";
+--table: "Tabelle"; --tables: var(--table) "n"; /* Tafel */ --of-tables: var(--tables);
+--figure: "Abbildung"; --figures: var(--figure) "en"; --of-figures: var(--figures);
+--formula: "Formel"; --formulas: var(--formula) "n"; --of-formulas: var(--formulas);
+--equation: "Gleichung"; --equations: var(--equation) "en"; --of-equations: var(--equations);
+--listing: "Listing"; --listings: var(--listing) "s"; --of-listings: var(--listings);
+--index: "Index"; --indexes: "Indizes"; /* Stichwortverzeichnis */
+--glossary: "Glossar"; --glossaries: var(--glossary) "e";
+--annex: "Anhang"; --annexes: "Anhänge"; --of-annexes: var(--annexes) "n";
+--bibliography: "Bibliographie"; --bibliographies: var(--bibliography) "n";
+--source: "Quelle"; --sources: var(--source) "n"; --of-sources: var(--sources);
+--subject: "Betreff"; --subjects: var(--subject) "e";
+--title: "Titel"; --titles: var(--title);
+--subtitle: "Untertitel"; --subtitles: var(--subtitle);
+--author: "Autor"; --authors: var(--author) "en"; --of-authors: var(--authors);
+--editor: "Herausgeber"; --editors: var(--editor); --of-editors: var(--editors) "n";
+--table-of: "verzeichnis"; --tables-of: var(--table-of) "se";
+--list-of: "liste"; --lists-of: var(--list-of) "n";
+--toc: "Inhalts" --var(table-of);
+--in: "in"; /* location, inside */
+--at: "bei"; /* location */
+--of: "von"; /* partial */
+--and: "und";
+--or: "oder";
+--et-al: "u.a.";
+--ibid: "ebd.";
+--f: "f."; --ff: "ff."; /* and the following */
+--to-symbol: "–";
+--of-symbol: "/";
+--qed: "\25FB";
+--ps: "PS";
+--cc: "CC";
+--bcc: "BCC";
+--enclosure: "Beilage"; --enclosures: var(--enclosure) "n";
+--attachment: "Anlage"; --attachments: var(--attachment) "n";
+--date-separator: "-"; /* "/" */
+--time-separator: ":";
+--example: "Beispiel"; --examples: var(--example) "e";
+--quotation: "Zitat"; --quotations: var(--quotation) "e";
+--corollary: "Folgerung"; --corollaries: var(--corollary) "en";
+--hypothesis: "Hypothese"; --hypothesis: var(--hypothesis) "n";
+--thesis: "These"; --thesises: var(--thesis) "n";
+--dissertation: "Dissertation"; --dissertations: var(--dissertation) "en";
+}
+

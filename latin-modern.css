@@ -7,11 +7,54 @@
  *
 > The following 72 text fonts, published with MetaType1 sources, constitute the Latin Modern family:
 >
-> lmb10, lmbo10, lmbx5, lmbx6, lmbx7, lmbx8, lmbx9, lmbx10, lmbx12, lmbxi10, lmbxo10, lmcsc10, lmcsco10, lmdunh10, lmduno10, lmr5, lmr6, lmr7, lmr8, lmr9, lmr10, lmr12, lmr17, lmri7, lmri8, lmri9, lmri10, lmri12, lmro8, lmro9, lmro10, lmro12, lmro17, lmss8, lmss9, lmss10, lmss12, lmss17, lmssbo10, lmssbx10, lmssdc10, lmssdo10, lmsso8, lmsso9, lmsso10, lmsso12, lmsso17, lmssq8, lmssqbo8, lmssqbx8, lmssqo8, lmtcsc10, lmtcso10, lmtk10, lmtko10, lmtl10, lmtlc10, lmtlco10, lmtlo10, lmtt8, lmtt9, lmtt10, lmtt12, lmtti10, lmtto10, lmu10, lmvtk10, lmvtko10, lmvtl10, lmvtlo10, lmvtt10, lmvtto10.
+> lmb10 Latin Modern Bold
+>     lmbo10, … Oblique
+>     lmbx5, lmbx6, lmbx7, lmbx8, lmbx9, lmbx10, lmbx12, … Extended
+>         lmbxi10, … Italic
+>         lmbxo10, … oblique
+> lmcsc10, Latin Modern Caps
+>     lmcsco10, … Oblique
+> lmdunh10, Latin Modern Dunhill
+>     lmduno10, … Oblique
+> lmr5, lmr6, lmr7, lmr8, lmr9, lmr10, lmr12, lmr17, Latin Modern Regular
+>     lmri7, lmri8, lmri9, lmri10, lmri12, … Italic
+>     lmro8, lmro9, lmro10, lmro12, lmro17, … Oblique
+> lmss8, lmss9, lmss10, lmss12, lmss17, … Latin Modern Sans-Serif
+>     lmssbo10, … Bold Oblique
+>     lmssbx10, … Bold Extended
+>     lmssdc10, … Demibold Caps
+>     lmssdo10, … Demibold Oblique
+>     lmsso8, lmsso9, lmsso10, lmsso12, lmsso17, … Oblique
+>     lmssq8, … ?
+>         lmssqbo8, … Bold Oblique
+>         lmssqbx8, … Bold Extended
+>         lmssqo8, … Oblique
+> lmtcsc10, Latin Modern 
+> lmtcso10,
+> lmtk10,
+>     lmtko10,
+> lmtl10,
+>    lmtlc10,
+>        lmtlco10,
+>    lmtlo10,
+> lmtt8, lmtt9, lmtt10, lmtt12,
+>    lmtti10,
+>    lmtto10,
+> lmu10,
+> lmvtk10,
+>    lmvtko10,
+> lmvtl10,
+>    lmvtlo10,
+> lmvtt10,
+>    lmvtto10
 > 
 > In addition there are 20 math fonts, for which the Metatype1 sources were not published with the release of the Latin Modern Family:
 > 
-> lmbsy5, lmbsy7, lmbsy10, lmex10, lmmi5, lmmi6, lmmi7, lmmi8, lmmi9, lmmi10, lmmi12, lmmib5, lmmib7, lmmib10, lmsy5, lmsy6, lmsy7, lmsy8, lmsy9, lmsy10.
+> lmbsy5, lmbsy7, lmbsy10,
+> lmex10,
+> lmmi5, lmmi6, lmmi7, lmmi8, lmmi9, lmmi10, lmmi12,
+> lmmib5, lmmib7, lmmib10,
+> lmsy5, lmsy6, lmsy7, lmsy8, lmsy9, lmsy10
  *
  */
 

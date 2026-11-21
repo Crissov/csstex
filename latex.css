@@ -129,6 +129,17 @@ dl dd {
   content: var(qed);
   float: right;
 }
+.no-numbers {
+	& .theorem::before {
+		content: var(--theorem) ".";
+	}
+	& .lemma::before {
+		content: var(--lemma) ".";
+	}
+	& .definition::before {
+		content: var(--definition) ".";
+	}
+}
 /**
  * 
  */

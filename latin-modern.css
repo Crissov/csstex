@@ -1,0 +1,244 @@
+/*
+@include url("https://cdn.jsdelivr.net/gh/sugina-dev/latin-modern-web@1.0.1/style/latinmodern-mono.css");
+@include url("https://fonts.cdnfonts.com/css/latin-modern-roman");
+*/
+/**
+ * @source <https://www.gust.org.pl/projects/e-foundry/latin-modern>
+ *
+> The following 72 text fonts, published with MetaType1 sources, constitute the Latin Modern family:
+>
+> lmb10, lmbo10, lmbx5, lmbx6, lmbx7, lmbx8, lmbx9, lmbx10, lmbx12, lmbxi10, lmbxo10, lmcsc10, lmcsco10, lmdunh10, lmduno10, lmr5, lmr6, lmr7, lmr8, lmr9, lmr10, lmr12, lmr17, lmri7, lmri8, lmri9, lmri10, lmri12, lmro8, lmro9, lmro10, lmro12, lmro17, lmss8, lmss9, lmss10, lmss12, lmss17, lmssbo10, lmssbx10, lmssdc10, lmssdo10, lmsso8, lmsso9, lmsso10, lmsso12, lmsso17, lmssq8, lmssqbo8, lmssqbx8, lmssqo8, lmtcsc10, lmtcso10, lmtk10, lmtko10, lmtl10, lmtlc10, lmtlco10, lmtlo10, lmtt8, lmtt9, lmtt10, lmtt12, lmtti10, lmtto10, lmu10, lmvtk10, lmvtko10, lmvtl10, lmvtlo10, lmvtt10, lmvtto10.
+> 
+> In addition there are 20 math fonts, for which the Metatype1 sources were not published with the release of the Latin Modern Family:
+> 
+> lmbsy5, lmbsy7, lmbsy10, lmex10, lmmi5, lmmi6, lmmi7, lmmi8, lmmi9, lmmi10, lmmi12, lmmib5, lmmib7, lmmib10, lmsy5, lmsy6, lmsy7, lmsy8, lmsy9, lmsy10.
+ *
+ */
+
+/** Latin Modern Roman */
+@font-face {
+    font-family: 'Latin Modern';
+    font-weight: 400; /* normal */
+    font-style: normal; /* regular */
+    src: local('LMRoman10'), local("Latin Modern Roman Regular"), local("Latin Modern"), 
+         url('https://fonts.cdnfonts.com/s/266/lmroman10-regular.woff') format('woff');
+}
+@font-face {
+    font-family: 'Latin Modern';
+    font-weight: 400; /* normal */
+    font-style: italic;
+    src: local('LMRoman10'), local("Latin Modern Roman Italic"), local("Latin Modern Italic"),  local("Latin Modern"),
+         url('https://fonts.cdnfonts.com/s/266/lmroman10-italic.woff') format('woff');
+}
+@font-face {
+    font-family: 'Latin Modern';
+    font-weight: 600;
+    font-style: normal; /* regular */
+    src: local('LMRomanDemi10'), local("Latin Modern Roman Demi Regular"), local("Latin Modern Demibold"), local("Latin Modern"),
+         url('https://fonts.cdnfonts.com/s/266/lmromandemi10-regular.woff') format('woff');
+}
+@font-face {
+    font-family: 'Latin Modern';
+    font-weight: 600;
+    font-style: oblique; /*italic*/
+    src: local('LMRomanDemi10'), local("Latin Modern Roman Demi Oblique"),  local("Latin Modern Demibold Oblique"), local("Latin Modern"),
+         url('https://fonts.cdnfonts.com/s/266/lmromandemi10-oblique.woff') format('woff');
+}
+@font-face {
+    font-family: 'Latin Modern';
+    font-weight: 700; /* bold */
+    font-style: normal; /* regular */
+    src: local('LMRoman10'), local("Latin Modern Roman Bold"), local("Latin Modern Bold"),  local("Latin Modern"),
+         url('https://fonts.cdnfonts.com/s/266/lmroman10-bold.woff') format('woff');
+}
+@font-face {
+    font-family: 'Latin Modern';
+    font-weight: 700; /* bold */
+    font-style: italic;
+    src: local('LMRoman10'), local("Latin Modern Roman Bold Italic"),  local("Latin Modern Bold Italic"), local("Latin Modern"),
+         url('https://fonts.cdnfonts.com/s/266/lmroman10-bolditalic.woff') format('woff');
+}
+/** Latin Modern Dunhill */
+@font-face {
+    font-family: 'Latin Modern Dunhill';
+    font-weight: 400; /* normal */
+    font-style: normal; /* regular */
+    src: local('LMRomanDunh10'), local("Latin Modern Dunhill Regular"), local("Latin Modern Dunhill"), 
+         url('https://fonts.cdnfonts.com/s/266/lmromandunh10-regular.woff') format('woff');
+}
+@font-face {
+    font-family: 'Latin Modern Dunhill';
+    font-weight: 400; /* normal */
+    font-style: oblique; /* italic */
+    src: local('LMRomanDunh10'), local("Latin Modern Dunhill Oblique"), local("Latin Modern Dunhill"),
+         url('https://fonts.cdnfonts.com/s/266/lmromandunh10-oblique.woff') format('woff');
+}
+/** Latin Modern Capital Initials */
+@font-face {
+    font-family: 'Latin Modern Caps';
+    font-weight: 400; /* normal */
+    font-style: normal; /* regular */
+    src: local('LMRomanCaps10'), local("Latin Modern Roman Caps Regular"),  local("Latin Modern Caps"),
+         url('https://fonts.cdnfonts.com/s/266/lmromancaps10-regular.woff') format('woff');
+}
+@font-face {
+    font-family: 'Latin Modern Caps';
+    font-weight: 400; /* normal */
+    font-style: oblique; /* italic */
+    src: local('LMRomanCaps10'), local("Latin Modern Roman Caps Oblique"),  local("Latin Modern Caps Oblique"), local("Latin Modern Caps"),
+         url('https://fonts.cdnfonts.com/s/266/lmromancaps10-oblique.woff') format('woff');
+}
+/** Latin Modern Slant */
+@font-face {
+    font-family: 'Latin Modern Slant';
+    font-weight: 400; /* normal */
+    font-style: italic;
+    src: local('LMRomanSlant10'), local("Latin Modern Roman Slant Regular"),  local("Latin Modern Slant"), local("Latin Modern"),
+         url('https://fonts.cdnfonts.com/s/266/lmromanslant10-regular.woff') format('woff');
+}
+@font-face {
+    font-family: 'Latin Modern Slant';
+    font-weight: 700; /* bold */
+    font-style: italic;
+    src: local('LMRomanSlant10'), local("Latin Modern Roman Slant Bold"), local("Latin Modern Slant"), local("Latin Modern"),
+         url('https://fonts.cdnfonts.com/s/266/lmromanslant10-bold.woff') format('woff');
+}
+
+/** Latin Modern Mono */
+@font-face {
+    font-family: 'Latin Modern Mono';
+    font-weight: 400; /* normal */
+    font-style: normal; /* regular */
+    src: url('https://cdn.jsdelivr.net/gh/sugina-dev/latin-modern-web@1.0.1/font/lmmono-regular-webfont.eot');
+    src: local('LMMono10'), local("Latin Modern Mono"), 
+         url('https://cdn.jsdelivr.net/gh/sugina-dev/latin-modern-web@1.0.1/font/lmmono-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('https://fonts.cdnfonts.com/s/265/lmmono10-regular.woff') format('woff'),
+         url('https://cdn.jsdelivr.net/gh/sugina-dev/latin-modern-web@1.0.1/font/lmmono-regular-webfont.woff') format('woff'),
+         url('https://cdn.jsdelivr.net/gh/sugina-dev/latin-modern-web@1.0.1/font/lmmono-regular-webfont.ttf') format('truetype'),
+         url('https://cdn.jsdelivr.net/gh/sugina-dev/latin-modern-web@1.0.1/font/lmmono-regular-webfont.svg#latin_modern_mono10_regular') format('svg');
+}
+@font-face {
+    font-family: 'Latin Modern Mono';
+    font-weight: normal; /* 400 */
+    font-style: italic;
+    src: url('https://cdn.jsdelivr.net/gh/sugina-dev/latin-modern-web@1.0.1/font/lmmono-italic-webfont.eot');
+    src: local('LMMono10'), local("Latin Modern Mono Italic"), local("Latin Modern Mono"), 
+         url('https://cdn.jsdelivr.net/gh/sugina-dev/latin-modern-web@1.0.1/font/lmmono-italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('https://cdn.jsdelivr.net/gh/sugina-dev/latin-modern-web@1.0.1/font/lmmono-italic-webfont.woff') format('woff'),
+         url('https://cdn.jsdelivr.net/gh/sugina-dev/latin-modern-web@1.0.1/font/lmmono-italic-webfont.ttf') format('truetype'),
+         url('https://cdn.jsdelivr.net/gh/sugina-dev/latin-modern-web@1.0.1/font/lmmono-italic-webfont.svg#latin_modern_mono10_italic') format('svg');
+}
+@font-face {
+    font-family: 'Latin Modern Mono Caps';
+    font-weight: 400; /* normal */
+    font-style: normal; /* regular */
+    src: local('LMMonoCaps10'), local("Latin Modern Mono Caps Regular"), local("Latin Modern Mono Caps"), 
+         url('https://fonts.cdnfonts.com/s/265/lmmonocaps10-regular.woff') format('woff');
+}
+@font-face {
+    font-family: 'Latin Modern Mono';
+    font-weight: 300; /* light */
+    font-style: normal; /* regular */
+    src: local('LMMonoLt10'), local("Latin Modern Mono Light Regular"), local("Latin Modern Mono Light"), local("Latin Modern Mono"), 
+         url('https://fonts.cdnfonts.com/s/265/lmmonolt10-regular.woff') format('woff');
+}
+@font-face {
+    font-family: 'Latin Modern Mono';
+    font-weight: 300; /* light */
+    font-style: normal; /* regular */
+    font-width: condensed;
+    src: local('LMMonoLtCond10'), local("Latin Modern Mono Light Condensed Regular"), local("Latin Modern Mono Light Condensed"), local("Latin Modern Mono"), 
+         url('https://fonts.cdnfonts.com/s/265/lmmonoltcond10-regular.woff') format('woff');
+}
+@font-face {
+    font-family: 'Latin Modern Mono';
+    font-weight: 400; /* normal */
+    font-style: normal; /* regular */
+    src: local('LMMonoProp10'), local("Latin Modern Mono Regular"), local("Latin Modern Mono"), 
+         url('https://fonts.cdnfonts.com/s/265/lmmonoprop10-regular.woff') format('woff');
+}
+@font-face {
+    font-family: 'Latin Modern Mono';
+    font-weight: 400; /* normal */
+    font-style: normal; /* regular */
+    src: local('Latin Modern Mono'), local("Latin Modern Mono Regular"), local("Latin Modern Mono"), 
+         url('https://fonts.cdnfonts.com/s/265/lmmonoproplt10-regular.woff') format('woff');
+}
+@font-face {
+    font-family: 'Latin Modern Mono';
+    font-weight: 400; /* normal */
+    font-style: oblique; /* italic */
+    src: local('LMMonoSlant10'), local("Latin Modern Mono Slant Regular"), local("Latin Modern Mono Slant"), local("Latin Modern Mono"), 
+         url('https://fonts.cdnfonts.com/s/265/lmmonoslant10-regular.woff') format('woff');
+}
+@font-face {
+    font-family: 'Latin Modern Mono';
+    font-weight: 400; /* normal */
+    font-style: italic;
+    src: local('LMMono10'), local("Latin Modern Mono Italic"), local("Latin Modern Mono"), 
+         url('https://fonts.cdnfonts.com/s/265/lmmono10-italic.woff') format('woff');
+}
+@font-face {
+    font-family: 'Latin Modern Mono Caps';
+    font-weight: 400; /* normal */
+    font-style: oblique; /* italic */
+    src: local('LMMonoCaps10'), local("Latin Modern Mono Caps Oblique"), local("Latin Modern Mono Caps"), 
+         url('https://fonts.cdnfonts.com/s/265/lmmonocaps10-oblique.woff') format('woff');
+}
+@font-face {
+    font-family: 'Latin Modern Mono';
+    font-weight: 300; /* light */
+    font-style: oblique; /* italic */
+    src: local('LMMonoLt10'), local("Latin Modern Mono Light Oblique"), local("Latin Modern Mono"), 
+         url('https://fonts.cdnfonts.com/s/265/lmmonolt10-oblique.woff') format('woff');
+}
+@font-face {
+    font-family: 'Latin Modern Mono';
+    font-weight: 300; /* light */
+    font-style: oblique; /* italic */
+    font-width: condensed;
+    src: local('LMMonoLtCond10'), local("Latin Modern Mono Light Condensed Oblique"), local("Latin Modern Mono"), 
+         url('https://fonts.cdnfonts.com/s/265/lmmonoltcond10-oblique.woff') format('woff');
+}
+@font-face {
+    font-family: 'Latin Modern Mono';
+    font-weight: 400; /* normal */
+    font-style: oblique; /* italic */
+    src: local('LMMonoProp10'), local("Latin Modern Mono"), local("Latin Modern Mono"), 
+         url('https://fonts.cdnfonts.com/s/265/lmmonoprop10-oblique.woff') format('woff');
+}
+@font-face {
+    font-family: 'Latin Modern Mono';
+    font-weight: 400; /* normal */
+    font-style: oblique; /* italic */
+    src: local('LMMonoPropLt10'), local("Latin Modern Mono Oblique"), local("Latin Modern Mono"), 
+         url('https://fonts.cdnfonts.com/s/265/lmmonoproplt10-oblique.woff') format('woff');
+}
+@font-face {
+    font-family: 'Latin Modern Mono';
+    font-weight: 700; /* bold */
+    font-style: normal; /* regular */
+    src: local('LMMonoLt10'), local("Latin Modern Mono Bold"), local("Latin Modern Mono"), 
+         url('https://fonts.cdnfonts.com/s/265/lmmonolt10-bold.woff') format('woff');
+}
+@font-face {
+    font-family: 'Latin Modern Mono';
+    font-weight: 700; /* bold */
+    font-style: normal; /* regular */
+    src: local('LMMonoPropLt10'), local("Latin Modern Mono"), local("Latin Modern Mono"), 
+         url('https://fonts.cdnfonts.com/s/265/lmmonoproplt10-bold.woff') format('woff');
+}
+@font-face {
+    font-family: 'Latin Modern Mono';
+    font-weight: 700; /* bold */
+    font-style: oblique; /* italic */
+    src: local('LMMonoLt10'), local("Latin Modern Mono Light Bold Oblique"), local("Latin Modern Mono"), 
+         url('https://fonts.cdnfonts.com/s/265/lmmonolt10-boldoblique.woff') format('woff');
+}
+@font-face {
+    font-family: 'Latin Modern Mono';
+    font-weight: 700; /* bold */
+    font-style: oblique; /* italic */
+    src: local('LMMonoPropLt10'), local("Latin Modern Mono Light Bold Oblique"), local("Latin Modern Mono"), 
+         url('https://fonts.cdnfonts.com/s/265/lmmonoproplt10-boldoblique.woff') format('woff');
+}

@@ -1,5 +1,7 @@
 /**
- * inspired by latex.css from <https://github.com/davidrzs/latexcss> (MIT License)
+ * inspired by
+ *  - latex.css from <https://github.com/davidrzs/latexcss/> (MIT License)
+ *  - style.css from <https://github.com/vincentdoerig/latex-css/>
  * @license MIT
  */
 
@@ -12,15 +14,16 @@
  * Fonts
  */
 @include url("latin-modern.css");
+/*@include url("libertinus.css");*/
 
 /*
  * Page Layout
  */
 :root {
-	font: 13pt 'Latin Modern', serif;
+  font: 13pt 'Latin Modern', serif;
   color: black;
   background-color: white;
-	counter-reset:
+  counter-reset:
     theorem,
     definition,
     lemma,
@@ -35,43 +38,89 @@
     paragraph;
 }
 
+/** Headings */
 h1, h2, h3, h4, h5, h6 {
-	border: none;
-	font-weight: bold;
+  border: none;
+  font-weight: bold;
+}
+h1 {
+  font-size: 2.5rem;
+  line-height: 3.25rem;
+  margin-bottom: 1.625rem;
+}
+h2 {
+  font-size: 1.7rem;
+  line-height: 2rem;
+  margin-top: 3rem;
+}
+h3 {
+  font-size: 1.4rem;
+  line-height: 1.625rem;
+  margin-top: 2.5rem;
+}
+h4 {
+  font-size: 1.2rem;
+  line-height: 1.625rem;
+  margin-top: 2rem;
+}
+h5 {
+  font-size: 1rem;
+  line-height: 1.625rem;
+  margin-top: 1.8rem;
+}
+h6 {
+  font-size: 1rem;
+  line-height: 1.625rem;
+  font-style: italic;
+  font-weight: normal;
+  margin-top: 2.5rem;
+}
+h1:first-of-type, h1.title  {
+  text-align: center;
+}
+h1 + h2 {
+  margin-top: 1.625rem;
+}
+h2 + h3, h3 + h4, h4 + h5 {
+  margin-top: 0.8rem;
+}
+h5 + h6 {
+  margin-top: -0.8rem;
+}
+h2, h3, h4, h5, h6 {
+  margin-bottom: 0.8rem;
 }
 
+/** Links */
 a:link, a:visited {
-	color: maroon;
+  color: maroon;
+  background-color: white;
 }
 
+/** Lists */
 ul {
-	list-style: disc;
+  list-style: disc;
 }
 
 /* Content Box */
 
 body {
-	max-width: 40rem; /* ~ 720px = 540pt = 7.5in = 19.05cm */
-	margin: 2rem auto;
-}
-
-h1:first-of-type  {
-	text-align: center;
-	display: block;
+  max-width: 40rem; /* ~ 720px = 540pt = 7.5in = 19.05cm */
+  margin: 2rem auto;
 }
 
 /*
  * Article Body
  */
 body {
-	text-align: justify;
-	hyphens: auto;
+  text-align: justify;
+  hyphens: auto;
   padding: 0 1em;
 }
 
 dl dd {
-	/* center definitions (most useful for display equations) */
-	text-align: center;
+  /* center definitions (most useful for display equations) */
+  text-align: center;
 }
 
 @media (min-width: 43.75em /* 568.75pt ~ 758.3px ~7.9in ~ 20.06cm */) {
@@ -130,15 +179,15 @@ dl dd {
   float: right;
 }
 .no-numbers {
-	& .theorem::before {
-		content: var(--theorem) ".";
-	}
-	& .lemma::before {
-		content: var(--lemma) ".";
-	}
-	& .definition::before {
-		content: var(--definition) ".";
-	}
+  & .theorem::before {
+    content: var(--theorem) ".";
+  }
+  & .lemma::before {
+    content: var(--lemma) ".";
+  }
+  & .definition::before {
+    content: var(--definition) ".";
+  }
 }
 /**
  * 
@@ -148,4 +197,22 @@ dl dd {
   margin-bottom: 6pt;
   font-variant-caps: small-caps;
   text-align: center;
+}
+/**
+ * LaTeX Document Classes
+ */
+.book {
+  
+}
+.article {
+  
+}
+/**
+ * KOMAscript Document Classes
+ */
+.scrbook, .book.komascript { 
+  
+}
+.scrartcl, .article.komascript {
+  
 }

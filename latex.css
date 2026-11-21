@@ -1,0 +1,140 @@
+/**
+ * inspired by latex.css from <https://github.com/davidrzs/latexcss> (MIT License)
+ * @license MIT
+ */
+
+/**
+ * Internationalization
+ */
+@include url("i18n.css");
+
+/*
+ * Fonts
+ */
+@include url("latin-modern.css");
+
+/*
+ * Page Layout
+ */
+:root {
+	font: 13pt 'Latin Modern', serif;
+  color: black;
+  background-color: white;
+	counter-reset:
+    theorem,
+    definition,
+    lemma,
+    proof,
+    table,
+    figure,
+    part,
+    chapter,
+    section,
+    subsection,
+    subsubsection,
+    paragraph;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	border: none;
+	font-weight: bold;
+}
+
+a:link, a:visited {
+	color: maroon;
+}
+
+ul {
+	list-style: disc;
+}
+
+/* Content Box */
+
+body {
+	max-width: 40rem; /* ~ 720px = 540pt = 7.5in = 19.05cm */
+	margin: 2rem auto;
+}
+
+h1:first-of-type  {
+	text-align: center;
+	display: block;
+}
+
+/*
+ * Article Body
+ */
+body {
+	text-align: justify;
+	hyphens: auto;
+  padding: 0 1em;
+}
+
+dl dd {
+	/* center definitions (most useful for display equations) */
+	text-align: center;
+}
+
+@media (min-width: 43.75em /* 568.75pt ~ 758.3px ~7.9in ~ 20.06cm */) {
+  body {
+    padding: 0;
+  }
+}
+
+/**
+ * Classic environments
+ */
+.theorem, 
+.lemma, 
+.definition, 
+.proof {
+  display: block;
+  margin: 9pt 0;
+}
+.theorem, 
+.lemma {
+  counter-increment: theorem;
+}
+.definition {
+  counter-increment: definition;
+}
+.theorem, 
+.lemma {
+  font-style: italic;
+}
+.definition, 
+.proof {
+  font-style: normal;
+}
+.theorem::before, 
+.lemma::before, 
+.definition::before {
+  font-weight: bold;
+  font-style: normal;
+  text-transform: title-case;
+}
+.theorem::before {
+  content: var(--theorem) " " counter(theorem) ".";
+}
+.lemma::before {
+  content: var(--lemma) " " counter(theorem) ".";
+}
+.definition::before {
+  content: var(--definition) " " counter(definition) ".";
+}
+.proof::before {
+  content: var(--proof) ".";
+  font-style: italic;
+}
+.proof::after {
+  content: var(qed);
+  float: right;
+}
+/**
+ * 
+ */
+.author {
+  margin-top: 6pt;
+  margin-bottom: 6pt;
+  font-variant-caps: small-caps;
+  text-align: center;
+}

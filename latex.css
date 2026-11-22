@@ -15,6 +15,9 @@
  */
 @include url("latin-modern.css");
 /*@include url("libertinus.css");*/
+/*
+bookman
+*/
 
 /*
  * Page Layout
@@ -207,12 +210,171 @@ dl dd {
 .article {
   
 }
+.report {
+  
+}
+.letter {
+  
+}
 /**
  * KOMAscript Document Classes
  */
 .scrbook, .book.komascript { 
+--page-sides: 2;
+}
+.scrartcl, scrarticle, .article.koma {
   
 }
-.scrartcl, .article.komascript {
+.scrrprt, .scrreport, .report.koma {
   
+}
+.scrlttr2, .scrletter, .letter.koma {
+--page-sides: 1;
+}
+.typearea {
+/*
+type area height : type area width = page height : page width
+top margin : footer margin         = 1 : 2
+left margin : right margin         = 1 : 1
+half inner margin : outer margin   = 1 : 2
+page width                         = paper width − binding correction
+top margin + bottom margin         = page height − type area height
+left margin + right margin         = page width − type area width
+half inner margin + outer margin   = page width − type area width
+half inner margin + binding correction = gutter 
+ */
+--page-divider: var(--DIV, 9);/*number of divisions of the page – or grid columns; <integer> | calc | classic | current | last | default | areaset*/
+--sheet-long-side: 297mm;
+--sheet-short-side: 210mm;
+--binding-correction: var(--BCOR, 0mm);
+--page-height: var(--sheet-side-long, 297mm);
+--page-width: calc(var(--sheet-side-short, 210mm) - var(--binding-correction, 0mm));
+--page-area: calc(var(--page-height, 297mm) * var(--page-width, 210mm));
+--page-diameter: calc(sqrt(exp(var(--page-height, 297mm)/1mm, 2) + exp(var(--page-width, 210mm)/1mm, 2))*1mm);
+--page-margin-top: calc(var(--page-margin-footer, 66mm) / 2);
+--page-margin-bottom: calc(var(--page-height, 297mm) - var(--page-margin-top, 33m) - var(--typearea-height, 198mm));
+--page-margin-footer: calc(var(--page-margin-top, 33mm) * 2);
+--page-margin-left: calc(var(--page-margin-right, var(--page-margin-inner, 23.333mm)));
+--page-margin-right: calc(var(--page-margin-left, var(--page-margin-outer, 46.667mm)));
+--page-margin-inner-half: calc(var(--page-margin-inner, var(--page-margin-outer, 35mm)) / 2);
+--page-margin-inner: var(--page-margin-outer, calc(var(--page-margin-left, 35mm)));
+--page-margin-outer: var(--page-margin-inner, calc(var(--page-margin-right, 35mm)));
+--page-gutter: calc(var(--page-margin-inner-half, 0mm) + var(--binding-correction, 0mm));
+--typearea-height: calc(var(--typearea-width) * var(--page-height, 297mm) / var(--page-width, 210mm));
+--typearea-width: calc(var(--typearea-height) * var(--page-width, 210mm) / var(--page-height, 297mm));
+--:;
+--:;
+--:;
+/*
+  raggedbottom vs. flushbottom
+ */
+}
+.a4paper, .paper=a4 {
+--sheet-long-side: 297mm;
+--sheet-short-side: 210mm;
+}
+.paper=iso {
+--sheet-aspect-ratio: calc(sqrt(2));
+--sheet-short-side: calc((exp(2, (var(--sheet-exponent)-4)/16) * exp(sqrt(1/2), exp(2, -1*var(--sheet-factor, 0))))*var(--sheet-multiplier, 1)*1000mm);
+--sheet-long-side: calc((exp(2, (var(--sheet-exponent)+4)/16) * exp(sqrt(1/2), exp(2, -1*var(--sheet-factor, 0))))*var(--sheet-multiplier, 1)*1000mm);
+/*--sheet-base-area: calc(exp(2, var(--sheet-exponent)/8) * exp(var(--sheet-multiplier, 1), 2) * 1000000);/*mm^2*/
+}
+.paper=jis {
+--sheet-exponent: -8;
+--sheet-multiplier: sqrt(3);
+}
+.paper-series=a {
+--sheet-exponent: 0;
+}
+.paper-series=b {
+--sheet-exponent: 4;
+}
+.paper-series=c {
+--sheet-exponent: 2;
+}
+.paper-series=d {
+--sheet-exponent: 6;
+}
+.paper-format=0 {
+--sheet-factor: 0;/*1*/
+}
+.paper-format=1 {
+--sheet-factor: 1;/*1/2*/
+}
+.paper-format=2 {
+--sheet-factor: 2;/*1/4*/
+}
+.paper-format=3 {
+--sheet-factor: 3;/*1/8*/
+}
+.paper-format=4 {
+--sheet-factor: 4;/*1/16*/
+}
+.paper-format=5 {
+--sheet-factor: 5;/*1/32*/
+}
+.paper-format=6 {
+--sheet-factor: 6;/*1/64*/
+}
+.paper-format=7 {
+--sheet-factor: 7;/*1/128*/
+}
+.paper-format=8 {
+--sheet-factor: 8;/*1/256*/
+}
+.paper-format=9 {
+--sheet-factor: 9;/*1/512*/
+}
+.paper-format=10 {
+--sheet-factor: 10;/*1/1024*/
+}
+.paper-format=2x0 {
+--sheet-factor: -1;/*2*/
+}
+.paper-format=4x0 {
+--sheet-factor: -2;/*4*/
+}
+.paper=letter {
+--sheet-long-side: 11in;
+--sheet-short-side: 8.5in;
+}
+.paper=legal {
+--sheet-long-side: 11in;
+--sheet-short-side: 8.5in;
+}
+.paper=executive {
+--sheet-long-side: 11in;
+--sheet-short-side: 8.5in;
+}
+.portrait, .paper=portrait {
+--page-height: var(--sheet-side-long);
+--page-width: var(--sheet-side-short);
+}
+.landscape, .seascape, .paper=landscape, .paper=seascape {
+--page-height: var(--sheet-side-short);
+--page-width: var(--sheet-side-long);
+}
+.oneside, .sides=1 {
+--page-sides: 1;
+}
+.twoside, .sides=2 {
+--page-sides: 2;
+}
+.twocolumn, .columns=2 {
+--page-columns: 2;
+}
+.headinclude {}
+.footinclude {}
+.mpinclude {}
+.10pt {
+--div: 8;
+  font-size: 10pt;
+}
+.11pt {
+--div: 10;
+  font-size: 11pt;
+}
+.12pt {
+--div: 12;
+  font-size: 12pt;
 }
